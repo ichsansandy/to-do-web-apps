@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap:5vw;
+    margin-top:10vh;
+    background-color: #242424;
+}
+
+section{
+    width: 25vw;
+    min-height: 300px ;
+    background-color: rgb(92, 136, 231);
+    height: fit-content;
+}
+
+section .title h1{
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+
+section .title {
+    width: 100%;
+    background-color: rgb(172, 166, 104);
+    text-align: center;
+}
+
+section .task{
+    background-color: red;
+    padding: 5px 10px;
+    margin: 2vh 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
