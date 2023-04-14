@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="to-do-section">
+    <section class="to-do-section container">
       <div class="title"><h1>To Do</h1></div>
-      <div class="task"> task 1</div>
-      <div class="task"> task 1</div>
+      <div class="task draggable" draggable="true">task 1</div>
+      <div class="task draggable" draggable="true">task 2</div>
+      <div class="task draggable" draggable="true">task 3</div>
+      <div class="task draggable" draggable="true">task 4</div>
     </section>
-    <section class="inprogress-section">
+    <section class="inprogress-section container">
       <div class="title"><h1>Inprogress</h1></div>
     </section>
-    <section class="done-section">
+    <section class="done-section container">
       <div class="title"><h1>Done</h1></div>
     </section>
+    <script defer src="app.js"></script>
   </body>
 </html>
