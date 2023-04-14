@@ -1,59 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-:root{
-    --primary-color:#F9F5EB;
-    --secondary-color:#E4DCCF ;
-    --highlight-color:#EA5455;
-    --tone-color:#002B5B;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary-color: #f9f5eb;
+  --secondary-color: #e4dccf;
+  --highlight-color: #ea5455;
+  --tone-color: #002b5b;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap:5vw;
-    margin-top:10vh;
-    background-color: var(--primary-color);
-}
-
-section{
-    width: 25vw;
-    min-height: 300px ;
-    background-color: var(--secondary-color);
-    height: fit-content;
-    border-radius: 20px ;
-    border: 2px solid var(--tone-color);
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin-top: 7vh;
+  background-color: var(--primary-color);
 }
 
-section .title h1{
-    /* margin: 0; */
-    padding: 5px;
-    color: var(--primary-color);
+section {
+  width: 25vw;
+  min-height: 300px;
+  background-color: var(--secondary-color);
+  height: fit-content;
+  border-radius: 20px;
+  border: 5px solid var(--tone-color);
+}
+
+section .title h1 {
+  /* margin: 0; */
+  padding: 5px;
+  color: var(--primary-color);
+  border-block: 3px ridge var(--primary-color);
 }
 
 section .title {
-    width: 100%;
-    background-color: var(--highlight-color);
-    text-align: center;
+  width: 100%;
+  background-color: var(--highlight-color);
+  text-align: center;
 }
 
-section .task{
-    background-color: var(--tone-color);
-    padding: 5px 10px;
-    margin: 2vh 10px;
-    border: 3px solid white;
-    border-radius: 10px;
-    min-height: 200px;
+section .task {
+  background-color: var(--tone-color);
+  padding: 5px 10px;
+  margin: 2vh 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+  min-height: 200px;
 }
 
-.draggable{
-    padding: 1rem;
-    cursor: move;
-    color: var(--primary-color);
+.inprogress-section .task {
+  background-color: #ffbd33;
 }
 
-.dragging{
-    opacity: 0.5;
+.done-section .task {
+  background-color: green;
 }
 
+.new-task {
+  position: fixed;
+  width: 12vh;
+  height: 12vh;
+  bottom: 40px;
+  border-radius: 50%;
+  border: 6px double;
+  font-size: 30px;
+  transition: ease-out 0.5s;
+}
 
+.new-task:hover {
+  transition: ease-in 0.5s;
+  width: calc(2 * 12vh);
+  border-radius: 4vh;
+  background-color: var(--tone-color);
+  color: var(--secondary-color);
+}
+
+.draggable {
+  padding: 1rem;
+  cursor: move;
+  color: var(--primary-color);
+}
+
+.dragging {
+  opacity: 0.5;
+}

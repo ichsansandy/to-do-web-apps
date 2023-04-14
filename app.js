@@ -63,3 +63,17 @@ function getDragElement(container, y) {
     { offset: Number.NEGATIVE_INFINITY }
   ).element;
 }
+
+// button new task
+
+const button_new_task = document.querySelector(".new-task");
+
+button_new_task.addEventListener("mouseover", () => {
+  button_new_task.style.fontSize = "30px";
+  button_new_task.textContent = "New Task";
+});
+
+button_new_task.addEventListener("mouseout", () => {
+    button_new_task.textContent = "+";
+//   button_new_task.style.fontSize = "10vh";
+});
